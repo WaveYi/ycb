@@ -9,8 +9,8 @@ import {
 } from '../../api/user.js'
 import { base64src } from '../../utils/base64src.js'
 import publicFun from '../../utils/public.js'
-// var requestUrl = 'http://192.168.1.2:8093'
-var requestUrl = 'https://t.3p3.top'
+var requestUrl = 'http://192.168.1.2:8096'
+// var requestUrl = 'https://t.3p3.top'
 Page({
 
   /**
@@ -269,6 +269,7 @@ Page({
   chooseRoomImg(e){
     var that = this;
     publicFun.getImage(1,false,['album']).then((res)=>{
+      console.log(JSON.stringify(res))
       wx.uploadFile({
         url: requestUrl + '/applet/file/upload', //仅为示例，非真实的接口地址
         filePath: res[0],
@@ -438,6 +439,7 @@ Page({
     })
   },
   submitForm(e){
+    console.log(JSON.stringify(e))
     if(this.data.company_name==''){
       wx.showToast({
         title: '请输入企业名称',

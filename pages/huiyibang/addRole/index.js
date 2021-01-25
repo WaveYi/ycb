@@ -20,6 +20,7 @@ Page({
     items: [
       {value: '8', name: '新用户经理', checked: 'true'},
       {value: '9', name: '老用户经理'},
+      {value: '10', name: '代理人'}
     ],
     remark: '',//站点名称
     roomId: '',

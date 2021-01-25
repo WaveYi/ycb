@@ -69,8 +69,8 @@
       <view class="form_content"><input placeholder="请输入举办方名称" value="{{person_name}}" data-key="person_name" bindinput="getInputVal"></input></view>
     </view> -->
     <view class="form_item">
-      <view class="form_txt">治疗名称 <text>*</text></view>
-      <view class="form_content"><input placeholder="请输入治疗名称" value="{{room_name}}" data-key="room_name" bindinput="getInputVal"></input></view>
+      <view class="form_txt">烟草名称 <text>*</text></view>
+      <view class="form_content"><input placeholder="请输入烟草名称" value="{{room_name}}" data-key="room_name" bindinput="getInputVal"></input></view>
     </view>
     <view class="form_item">
       <view class="form_txt">联系方式 <text>*</text></view>
@@ -120,7 +120,7 @@
       </view>
     </view> -->
     <view class="form_item">
-      <view class="form_txt">治疗背景图片 <text>*</text></view>
+      <view class="form_txt">烟草背景图片 <text>*</text></view>
       <view class="form_content noborder">
         <view class="add_box" bindtap="chooseRoomImg">
           <text wx:if="{{is_roomImg == 0}}">+</text>

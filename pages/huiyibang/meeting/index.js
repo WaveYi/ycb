@@ -300,7 +300,7 @@ Page({
         }
       ]
     }else if(this.data.room_identity == 1){
-      // 治疗老板
+      // 烟草老板
       meeting_list = [{
         title: '查看角色申请',
         icon: '/assets/hyb/hyb1.png'
@@ -532,7 +532,7 @@ Page({
                 array = ['代理人'];
                 role_list = [3];
               }else if(data[0].roleType == 1){
-                array = ['治疗老板','新用户经理','老用户经理'];
+                array = ['店铺老板','新用户经理','老用户经理'];
                 role_list = [1,8,9];
               }else if(data[0].roleType == 2){
                 array = ['新用户经理','老用户经理'];

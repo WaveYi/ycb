@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "治疗帮",
+  "navigationBarTitleText": "小野帮",
   "usingComponents": {
     "van-nav-bar": "@vant/weapp/nav-bar/index",
     "van-cell": "@vant/weapp/cell/index",

@@ -38,12 +38,12 @@
   },
 
   roleStatus: function(status){
-    // 角色 0 消费者 1 治疗老板 2 治疗经理 3 代理人 4 销售员 5 嘉宾邀请 6 会议观察员 7 物流站点 8 新用户经理 9 老用户经理
+    // 角色 0 消费者 1 店铺老板 2 治疗经理 3 代理人 4 销售员 5 嘉宾邀请 6 会议观察员 7 物流站点 8 新用户经理 9 老用户经理
     var status_txt = '';
     if(status == '0' || status == null){
       status_txt = '用户';
     }else if(status == '1'){
-      status_txt = '治疗老板';
+      status_txt = '店铺老板';
     }else if(status == '2'){
       status_txt = '治疗经理';
     }else if(status == '3'){
