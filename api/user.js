@@ -962,7 +962,7 @@ export function companyMemberList(data) {
   })
 }
 
-// 治疗帮接口
+// 小野帮接口
 // 查询代理人优惠券
 export function getAgentCoupon1(data) {
   return request({
@@ -1867,7 +1867,7 @@ export function queryCouponSellAmountStatisticalTrend(data) {
 }
 
 
-// 治疗帮接口
+// 小野帮接口
 // 老用户绑定设备类型
 export function updateCodeCouponType(data) {
   return request({

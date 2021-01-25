@@ -210,8 +210,8 @@ Page({
     wx.scanCode({
       success(res) {
         console.log('扫码返回的参数: '+JSON.stringify(res.result));
-        // console.log('截取字符串后：'+res.result.replace("https://h.3p3.top?data=",""))
-        let data = res.result.replace("https://h.3p3.top?data=","");
+        // console.log('截取字符串后：'+res.result.replace("https://y.3p3.top?data=",""))
+        let data = res.result.replace("https://y.3p3.top?data=","");
         let codeNumber = data.split(',')[2].split('=')[1];
         console.log('---codeNumber: '+codeNumber);
         let videoList = [];
@@ -263,8 +263,8 @@ Page({
     wx.scanCode({
       success(res) {
         console.log('扫码返回的参数: '+JSON.stringify(res.result));
-        // console.log('截取字符串后：'+res.result.replace("https://h.3p3.top?data=",""))
-        let data = res.result.replace("https://h.3p3.top?data=","");
+        // console.log('截取字符串后：'+res.result.replace("https://y.3p3.top?data=",""))
+        let data = res.result.replace("https://y.3p3.top?data=","");
         let codeNumber = data.split(',')[2].split('=')[1];
         console.log(that.data.new_type_id+'---codeNumber: '+codeNumber);
         createParentTypeCode({
@@ -288,16 +288,16 @@ Page({
     console.log(this.data.room_identity);
     let meeting_list = [];
     if(this.data.room_identity == 3){
-      // 嘉宾
+      // 代理人
       meeting_list = [
         {
           title: '代理邀请管理',
           icon: '/assets/hyb/hyb2.png'
         },
-        {
-          title: '角色申请',
-          icon: '/assets/hyb/hyb13.png'
-        }
+        // {
+        //   title: '角色申请',
+        //   icon: '/assets/hyb/hyb13.png'
+        // }
       ]
     }else if(this.data.room_identity == 1){
       // 烟草老板
@@ -534,9 +534,12 @@ Page({
               }else if(data[0].roleType == 1){
                 array = ['店铺老板','新用户经理','老用户经理'];
                 role_list = [1,8,9];
-              }else if(data[0].roleType == 2){
-                array = ['新用户经理','老用户经理'];
-                role_list = [8,9];
+              }else if(data[0].roleType == 8){
+                array = ['新用户经理'];
+                role_list = [8];
+              }else if(data[0].roleType == 9){
+                array = ['老用户经理'];
+                role_list = [9];
               }
             }else{
               wx.removeStorageSync('room_id');
@@ -747,8 +750,8 @@ Page({
         wx.scanCode({
           success(res) {
             console.log('扫码返回的参数: '+JSON.stringify(res));
-            // console.log('截取字符串后：'+res.result.replace("https://h.3p3.top?data=",""))
-            let data = res.result.replace("https://h.3p3.top?data=","");
+            // console.log('截取字符串后：'+res.result.replace("https://y.3p3.top?data=",""))
+            let data = res.result.replace("https://y.3p3.top?data=","");
             let dataStr = JSON.parse(data.split('&')[0]).couponSellIdKey;
             console.log('---促销券idkey---'+dataStr)
             sellaccept({
@@ -774,8 +777,8 @@ Page({
         wx.scanCode({
           success(res) {
             console.log('扫码返回的参数: '+JSON.stringify(res));
-            // console.log('截取字符串后：'+res.result.replace("https://h.3p3.top?data=",""))
-            let data = res.result.replace("https://h.3p3.top?data=","");
+            // console.log('截取字符串后：'+res.result.replace("https://y.3p3.top?data=",""))
+            let data = res.result.replace("https://y.3p3.top?data=","");
             console.log('---促销券idkey---'+data)
             that.setData({
               codeId: data.split(',')[2].substring(3),
@@ -811,8 +814,8 @@ Page({
         wx.scanCode({
           success(res) {
             console.log('扫码返回的参数: '+JSON.stringify(res));
-            // console.log('截取字符串后：'+res.result.replace("https://h.3p3.top?data=",""))
-            let data = res.result.replace("https://h.3p3.top?data=","");
+            // console.log('截取字符串后：'+res.result.replace("https://y.3p3.top?data=",""))
+            let data = res.result.replace("https://y.3p3.top?data=","");
             let dataStr = JSON.parse(data.split('&')[0]).couponSellIdKey;
             console.log('---促销券idkey---'+dataStr)
             sellaccept({
@@ -853,8 +856,8 @@ Page({
         wx.scanCode({
           success(res) {
             console.log('扫码返回的参数: '+JSON.stringify(res));
-            // console.log('截取字符串后：'+res.result.replace("https://h.3p3.top?data=",""))
-            let data = res.result.replace("https://h.3p3.top?data=","");
+            // console.log('截取字符串后：'+res.result.replace("https://y.3p3.top?data=",""))
+            let data = res.result.replace("https://y.3p3.top?data=","");
             let dataStr = JSON.parse(data.split('&')[0]).couponSellIdKey;
             console.log('---促销券idkey---'+dataStr)
             sellaccept({
@@ -882,8 +885,8 @@ Page({
           
       //     success(res) {
       //       console.log('扫码返回的参数: '+res.result);
-      //       console.log('截取字符串后：'+res.result.replace("https://q.3p3.top?data=",""))
-      //       let dataStr = res.result.replace("https://q.3p3.top?data=","");
+      //       console.log('截取字符串后：'+res.result.replace("https://y.3p3.top?data=",""))
+      //       let dataStr = res.result.replace("https://y.3p3.top?data=","");
       //       that.setData({
       //         table_show: true,
       //         table_dataStr: dataStr 
@@ -963,7 +966,7 @@ Page({
           wx.scanCode({
             success(res) {
               console.log('扫车子二维码返回的参数---'+res.result);
-              let data = res.result.replace("https://h.3p3.top?data=","");
+              let data = res.result.replace("https://y.3p3.top?data=","");
               let codeNumber = data.split(',')[2].split('=')[1];
               console.log('codeNumber---'+codeNumber);
               that.setData({
@@ -984,7 +987,7 @@ Page({
           wx.scanCode({
             success(res) {
               console.log('扫箱子二维码返回的参数---'+res.result);
-              let data = res.result.replace("https://h.3p3.top?data=","");
+              let data = res.result.replace("https://y.3p3.top?data=","");
               let codeNumber = data.split(',')[2].split('=')[1];
               console.log('codeNumber---'+codeNumber);
               createRelationByTypeId({
@@ -1015,7 +1018,7 @@ Page({
             if(ares.code == 200){
               wx.scanCode({
                 success(res) {
-                  let data = res.result.replace("https://h.3p3.top?data=","");
+                  let data = res.result.replace("https://y.3p3.top?data=","");
                   let codeNumber = data.split(',')[2].split('=')[1];
                   console.log(codeNumber+'---code - remark---'+wx.getStorageSync('remark'))
                   that.scanSell(codeNumber,res.result);
@@ -1088,11 +1091,11 @@ Page({
     wx.scanCode({
       success(res) {
         console.log('扫码返回的参数: '+JSON.stringify(res));
-        // console.log('截取字符串后：'+res.result.replace("https://h.3p3.top?data=",""))
-        let data = res.result.replace("https://h.3p3.top?data=","");
+        // console.log('截取字符串后：'+res.result.replace("https://y.3p3.top?data=",""))
+        let data = res.result.replace("https://y.3p3.top?data=","");
         let dataStr = data.split('&')[0];
         let userId = data.split('&')[1].replace("userId=","");
-        // let dataStr = JSON.parse(data).url.replace("https://h.3p3.top?data=","");
+        // let dataStr = JSON.parse(data).url.replace("https://y.3p3.top?data=","");
         // let idKey = JSON.parse(data).idKey;
         // let userId = JSON.parse(data).userId;
         console.log('截取字符串后：'+dataStr)
@@ -1125,8 +1128,8 @@ Page({
     wx.scanCode({
       success(res) {
         console.log('扫码返回的参数: '+JSON.stringify(res));
-        // console.log('截取字符串后：'+res.result.replace("https://h.3p3.top?data=",""))
-        let data = res.result.replace("https://h.3p3.top?data=","");
+        // console.log('截取字符串后：'+res.result.replace("https://y.3p3.top?data=",""))
+        let data = res.result.replace("https://y.3p3.top?data=","");
         let dataStr = data.split('&')[0];
         verifySellCoupon({
           couponType: 1,
@@ -1155,7 +1158,7 @@ Page({
     let that = this;
     wx.showModal({
       title: "提示",
-      content: "确定要退出当前治疗吗？",
+      content: "确定要退出当前管理室吗？",
       success: function(mos){
         if(mos.confirm){
           emptyRoomRole({

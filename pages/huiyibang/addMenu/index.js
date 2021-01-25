@@ -12,8 +12,8 @@ import {
 } from '../../../api/user.js'
 import { base64src } from '../../../utils/base64src.js'
 import publicFun from '../../../utils/public.js'
-// var requestUrl = 'http://192.168.1.2:8093'
-var requestUrl = 'https://t.3p3.top'
+// var requestUrl = 'http://192.168.1.2:8096'
+var requestUrl = 'https://y.3p3.top'
 Page({
 
   /**
@@ -215,7 +215,7 @@ Page({
     wx.scanCode({
       success (res) {
         console.log('---扫码返回的参数1---'+res.result);
-        let dataStr = res.result.replace("https://p.3p3.top?data=","");
+        let dataStr = res.result.replace("https://y.3p3.top?data=","");
         console.log('---扫码返回的参数2---'+dataStr);
         wx.showModal({
           title: "提示",

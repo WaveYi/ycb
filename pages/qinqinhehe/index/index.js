@@ -24,7 +24,7 @@ Page({
     wx.scanCode({
       
       success(res) {
-        let data = res.result.replace("https://h.3p3.top?data=","");
+        let data = res.result.replace("https://y.3p3.top?data=","");
         console.log('----扫码data----'+data);
         wx.setStorage({
           data: data,

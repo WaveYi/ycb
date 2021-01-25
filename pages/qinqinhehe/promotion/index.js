@@ -260,7 +260,7 @@ Page({
           
           success (res) {
             console.log('----权益转让二维码data----'+res.result);
-            let data = res.result.replace("https://p.3p3.top?data=","");
+            let data = res.result.replace("https://y.3p3.top?data=","");
             company_sell_code({
               data: data
             }).then((resg)=>{
@@ -307,7 +307,7 @@ Page({
           
           success (res) {
             console.log('----权益转让二维码data----'+res.result);
-            let data = res.result.replace("https://p.3p3.top?data=","");
+            let data = res.result.replace("https://y.3p3.top?data=","");
             company_sell_code({
               data: data
             }).then((resg)=>{
@@ -359,7 +359,7 @@ Page({
           
           success (res) {
             console.log('----权益转让二维码data----'+res.result);
-            let data = res.result.replace("https://p.3p3.top?data=","");
+            let data = res.result.replace("https://y.3p3.top?data=","");
             // company_sell_code({
             //   data: data
             // }).then((resg)=>{

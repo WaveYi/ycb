@@ -59,7 +59,7 @@
         </view>
       </view>
     </view>
-    <view class="title">治疗信息</view>
+    <view class="title">产品信息</view>
     <!-- <view class="form_item">
       <text class="form_txt">举办方企业名称</text>
       <view class="form_content"><input placeholder="请输入举办方企业名称" value="{{company_name}}" data-key="company_name" bindinput="getInputVal"></input></view>
@@ -69,8 +69,8 @@
       <view class="form_content"><input placeholder="请输入举办方名称" value="{{person_name}}" data-key="person_name" bindinput="getInputVal"></input></view>
     </view> -->
     <view class="form_item">
-      <view class="form_txt">烟草名称 <text>*</text></view>
-      <view class="form_content"><input placeholder="请输入烟草名称" value="{{room_name}}" data-key="room_name" bindinput="getInputVal"></input></view>
+      <view class="form_txt">产品名称 <text>*</text></view>
+      <view class="form_content"><input placeholder="请输入产品名称" value="{{room_name}}" data-key="room_name" bindinput="getInputVal"></input></view>
     </view>
     <view class="form_item">
       <view class="form_txt">联系方式 <text>*</text></view>

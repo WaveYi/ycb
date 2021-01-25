@@ -52,20 +52,20 @@ Page({
       //解析url地址
       let newUrl = decodeURIComponent(options.q);
       console.log('----微信扫码接收的参数newUrl----'+newUrl);
-      data = newUrl.replace("https://h.3p3.top?data=","");
+      data = newUrl.replace("https://y.3p3.top?data=","");
       is_yqh = data.indexOf("IdKey");
       //获取对应number参数
       // data = wx.getQueryString({
       //   url: newUrl,
       //   name: "data"
       // });
-      // let data = res.result.replace("https://h.3p3.top?data=","");
+      // let data = res.result.replace("https://y.3p3.top?data=","");
       // console.log('----微信扫码接收的参数----'+newUrl); 
       console.log('---是否包含type---= '+is_yqh);
       console.log('----微信扫码接收的参数----'+data);
     }else{
       data = decodeURIComponent(wx.getStorageSync('params'));
-      data = data.replace("https://h.3p3.top?data=","");
+      data = data.replace("https://y.3p3.top?data=","");
       is_yqh = data.indexOf("IdKey");
       console.log('---是否包含type---= '+is_yqh)
       console.log('扫码接收的参数'+decodeURIComponent(data));
@@ -213,17 +213,17 @@ Page({
     }
   },
   bindDevice(){
-    if(this.data.coupon_index == null){
-      wx.showToast({
-        title: '请选择设备类型',
-        icon: 'none',
-        duration: 1500
-      })
-      return;
-    }
+    // if(this.data.coupon_index == null){
+    //   wx.showToast({
+    //     title: '请选择设备类型',
+    //     icon: 'none',
+    //     duration: 1500
+    //   })
+    //   return;
+    // }
     updateCodeCouponType({
       codeId: this.data.codeId,
-      couponType: this.data.coupon_index
+      couponType: 0
     }).then((res)=>{
       if(res.code == 200){
         this.setData({

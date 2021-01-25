@@ -4,8 +4,8 @@ import {
   add_company_code_type
 } from '../../../api/qqhh_user.js'
 import publicFun from '../../../utils/public.js'
-// var requestUrl = 'http://192.168.1.2:8093'
-var requestUrl = 'https://t.3p3.top'
+// var requestUrl = 'http://192.168.1.2:8096'
+var requestUrl = 'https://y.3p3.top'
 Page({
 
   /**

@@ -5,8 +5,8 @@ import {
 } from '../../../api/user.js'
 import { base64src } from '../../../utils/base64src.js'
 import publicFun from '../../../utils/public.js'
-// var requestUrl = 'http://192.168.1.2:8093'
-var requestUrl = 'https://t.3p3.top'
+// var requestUrl = 'http://192.168.1.2:8096'
+var requestUrl = 'https://y.3p3.top'
 Page({
 
   /**
@@ -60,7 +60,7 @@ Page({
       let time_end = items.activityEndTime.split(' ')[1].split(':')[0]+':'+items.activityEndTime.split(' ')[1].split(':')[1];
       this.data.items[items.isGuestInvite].checked = true;
       this.setData({
-        title: '修改治疗',
+        title: '修改信息',
         id: items.idKey,
         company_name: items.sponsorBusinessName,
         person_name: items.sponsorName,
