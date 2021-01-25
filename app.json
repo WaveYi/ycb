@@ -94,7 +94,8 @@
     "pages/huiyibang/memberArrange_list/apply_list/apply_list",
     "pages/huiyibang/memberArrange_list/hired_list/hired_list",
     "pages/huiyibang/checkConferenceRoomList/progressCheck/progressCheck",
-    "pages/huiyibang/checkConferenceRoomList/guestCheck/index"
+    "pages/huiyibang/checkConferenceRoomList/guestCheck/index",
+    "pages/shopmall/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
