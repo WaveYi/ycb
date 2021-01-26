@@ -33,8 +33,8 @@ import {
 } from '../../api/user.js'
 import { base64src } from '../../utils/base64src.js'
 import publicFun from '../../utils/public.js'
-// var requestUrl = 'http://192.168.1.2:8096'
-var requestUrl = 'https://y.3p3.top'
+var requestUrl = 'http://192.168.1.2:8096'
+// var requestUrl = 'https://y.3p3.top'
 Page({
 
   /**

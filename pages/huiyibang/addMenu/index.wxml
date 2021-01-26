@@ -45,7 +45,7 @@
         </picker>
       </view>
     </view> -->
-    <view class="form_item">
+    <!-- <view class="form_item">
       <text class="form_txt">视频类型</text>
       <view class="form_content">
         <picker mode="selector" range="{{couponTypes}}" range-key="name" bindchange="bindPickerChange">
@@ -53,18 +53,8 @@
             {{coupon_index?couponTypes[coupon_index].name:'请选择视频类型'}}
           </view>
         </picker>
-        <!-- <radio-group bindchange="radioChange">
-          <view style="display: flex;flex-wrap: wrap;">
-            <label class="weui-cell" wx:for="{{items}}" wx:key="index">
-              <view class="weui-cell__hd">
-                <radio value="{{item.value}}" checked="{{item.checked}}"/>
-              </view>
-              <view class="weui-cell__bd">{{item.name}}</view>
-            </label>
-          </view>
-        </radio-group> -->
       </view>
-    </view>
+    </view> -->
     <!-- <view class="form_item" wx:if="{{menu_type==1}}">
       <view class="form_txt">请上传代金券 </view>
       <view class="form_content">

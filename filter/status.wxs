@@ -126,7 +126,7 @@
     // 促销券状态(0:待接受,1:已接受,2:已完成)
     var status_txt = '';
     if(status == 0 || status == null){
-      status_txt = '天基权净空器';
+      status_txt = '小野视频';
     }else if(status == 1){
       status_txt = '舒博士多功能激光梳';
     }else if(status == 2){

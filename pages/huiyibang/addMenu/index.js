@@ -468,7 +468,7 @@ Page({
       title: this.data.menu_name,
       describe: this.data.describe,
       // electorName: this.data.phone,
-      type: this.data.coupon_index,
+      type: 0,
       // startTime: this.data.date_start+' '+this.data.time_start,
       // endTime: this.data.date_end+' '+this.data.time_end,
       // img: this.data.img

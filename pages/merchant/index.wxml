@@ -120,7 +120,7 @@
       </view>
     </view> -->
     <view class="form_item">
-      <view class="form_txt">烟草背景图片 <text>*</text></view>
+      <view class="form_txt">产品背景图片 <text>*</text></view>
       <view class="form_content noborder">
         <view class="add_box" bindtap="chooseRoomImg">
           <text wx:if="{{is_roomImg == 0}}">+</text>
